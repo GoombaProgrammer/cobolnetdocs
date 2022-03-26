@@ -1,34 +1,21 @@
 Usage
 =====
 
-.. _installation:
+Your first "Hello, World" program
+----------------
 
-Installation
-------------
-
-To use Lumache, first install it using pip:
+To create a hello world program, use the following code:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   PROCEDURE DIVISION
+      DISPLAY "Hello, World!".
+      STOP RUN.
+   END
 
-Creating recipes
-----------------
+Explanation:
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+PROCEDURE DIVISION = The beginning of a program, you can also do PROCEDURE MAIN or PROCEDURE Main
+DISPLAY "Hello, World!". = Displaying Hello world to the screen.
+STOP RUN. = Ending the program (optional)
+END = End of statement, this will end the program because the last statement was PROCEDURE DIVISION
